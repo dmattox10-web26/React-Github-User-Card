@@ -1,0 +1,41 @@
+body {
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.App {
+  height: 100vh;
+}
+
+.panel {
+    margin: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.panel:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.spacer {
+  height: 5vh;
+}
